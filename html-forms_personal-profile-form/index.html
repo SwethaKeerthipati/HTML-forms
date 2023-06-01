@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Create your Personal Profile</h1>
+    <form>
+      <p>We want to get to know you! Please enter your personal information.</p>
+      <section>
+        <fieldset aria-labelledby="personal-info">
+          <legend id="personal-info">Personal Information</legend>
+          <section>
+            <label for="first-name">Fisrt Name :</label>
+            <input type="text" name="firstname" id="first-name" />
+          </section>
+          <section>
+            <label for="last-name">Last Name :</label>
+            <input type="text" name="lastname" id="last-name" />
+          </section>
+          <section>
+            <label for="birthday">Your Birthday :</label>
+            <input
+              type="date"
+              name="birthday"
+              required
+              pattern="\d{4}-\d{2}-\d{2}"
+            />
+          </section>
+        </fieldset>
+        <p>Can you tell us a bit more?</p>
+        <fieldset aria-labelledby="more-infor">
+          <legend>Further Information</legend>
+          <section>
+            <label for="fav-color">Favourite Color :</label>
+            <input type="color" name="fav-color" id="fav-color" />
+          </section>
+          <section>
+            <label for="fav-pet">What is your favourite pet?</label>
+            <select name="fav-pet" id="fav-pet">
+              <option value="choose">Please choose an option</option>
+              <option value="Cat">Cat</option>
+              <option value="Pigeon">Pigeon</option>
+              <option value="Dog">Dog</option>
+            </select>
+          </section>
+        </fieldset>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </section>
+    </form>
+  </body>
+</html>
