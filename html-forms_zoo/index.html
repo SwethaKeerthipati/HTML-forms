@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Zoo Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section aria-label="contact">
+      <h2 id="form-heading">Zoo Visitor Sign Up</h2>
+      <p id="form-description">
+        Please provide all necessary information on your stay with us.
+      </p>
+
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <fieldset>
+          <legend>Enter your information</legend>
+
+          <!-- Email: label & input -->
+          <div>
+            <label for="email">Your email address</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <!-- Date: label & input -->
+          <div>
+            <label for="email">Date of Visit</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+              pattern="\d{4}-\d{2}-\d{2}"
+            />
+          </div>
+
+          <fieldset class="radio-options">
+            <legend>Which one of these animals would you like to visit?</legend>
+
+            <!-- Radio Buttons: labels & inputs -->
+            <input type="radio" id="animal1" name="animal" value="Tiger" />
+            <label for="visit-animal">Tiger</label>
+            <input type="radio" id="animal2" name="animal" value="Lion" />
+            <label for="visit-animal">Lion</label>
+            <input type="radio" id="animal3" name="animal" value="Monkey" />
+            <label for="visit-animal">Monkey</label>
+          </fieldset>
+
+          <!-- Textarea: label & input -->
+          <label for="request">Do you have something to share?:</label>
+
+          <textarea id="request" name="request" rows="5" cols="33"> </textarea>
+
+          <!-- Two Checkboxes: labels & inputs -->
+          <div>
+            <input
+              type="checkbox"
+              id="subscribeNews"
+              name="subscribe"
+              value="newsletter"
+            />
+            <label for="subscribeNews">Join the newsletter?</label>
+
+            <input
+              type="checkbox"
+              id="subscribeformore"
+              name="subscription"
+              value="more"
+            />
+            <label for="subscribeNews">Subscribe for more!</label>
+          </div>
+          <!-- Two Buttons: reset & submit -->
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
